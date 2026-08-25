@@ -1,7 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { FaHeart, FaShoppingBag } from "react-icons/fa";
 import { HiBars3, HiXMark } from "react-icons/hi2";
+import { CartContext } from "../../context/CartContext";
+import { FavoritesContext } from "../../context/FavoritesContext";
 
 function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -10,6 +12,16 @@ function Navbar() {
     `text-sm font-medium hover:text-primary transition-colors ${
       isActive ? "text-primary" : "text-body"
     }`;
+  // cart, fav badge
+  const { cartItems } = useContext(CartContext);
+  const { favoriteIds } = useContext(FavoritesContext);
+
+  // count
+  const totalItems = cartItems.reduce(
+    (total, item) => total + item.quantity,
+    0,
+  );
+  const totalFavorites = favoriteIds.length;
 
   return (
     <header className="sticky top-0 z-30 bg-cream/95 backdrop-blur border-b border-border">
@@ -76,22 +88,30 @@ function Navbar() {
 
         {/* Favorites and cart */}
         <div className="flex items-center gap-5">
+          {/* Favorites */}
           <NavLink to="/favorites">
-            {({ isActive }) => (
-              <FaHeart
-                className={isActive ? "text-primary" : "text-body"}
-                size={18}
-              />
-            )}
+            <div className="relative">
+              <FaHeart className="text-body" size={18} />
+
+              {totalFavorites > 0 && (
+                <span className="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                  {totalFavorites}
+                </span>
+              )}
+            </div>
           </NavLink>
 
+          {/* Cart */}
           <NavLink to="/cart">
-            {({ isActive }) => (
-              <FaShoppingBag
-                className={isActive ? "text-primary" : "text-body"}
-                size={18}
-              />
-            )}
+            <div className="relative">
+              <FaShoppingBag className="text-body" size={18} />
+
+              {totalItems > 0 && (
+                <span className="absolute -top-2 -right-2 bg-primary text-white text-xs rounded-full w-4 h-4 flex items-center justify-center">
+                  {totalItems}
+                </span>
+              )}
+            </div>
           </NavLink>
         </div>
       </nav>

@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { HiOutlineHeart, HiHeart } from "react-icons/hi2";
 import { FavoritesContext } from "../../context/FavoritesContext";
+import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
   const { id, name, price, image, bestSeller, available } = product;
@@ -8,11 +9,18 @@ function ProductCard({ product }) {
   const { favoriteIds, toggleFavorite } = useContext(FavoritesContext);
   const isFavourite = favoriteIds.includes(id);
   return (
-    <div
-      className={`relative rounded-lg p-4 shadow-md bg-surface ${!available ? "opacity-50 grayscale" : ""}`}
+    <Link
+      to={`/cake/${id}`}
+      className={`relative rounded-lg p-4 shadow-md bg-surface block ${
+        !available ? "opacity-50 grayscale" : ""
+      }`}
     >
       <button
-        onClick={() => toggleFavorite(id)}
+        onClick={(e) => {
+          e.stopPropagation();
+          e.preventDefault();
+          toggleFavorite(id);
+        }}
         className="absolute top-6 right-6 bg-surface rounded-full p-2 shadow hover:scale-110 transition"
         aria-label={
           isFavourite ? "Remove from favourites" : "Add to favourites"
@@ -49,7 +57,7 @@ function ProductCard({ product }) {
       <h3 className="text-lg font-semibold mt-3">{name}</h3>
       {/* Price */}
       <p className="text-primary font-bold">Rs. {price.toFixed(2)}</p>
-    </div>
+    </Link>
   );
 }
 

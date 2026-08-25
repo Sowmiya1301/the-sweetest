@@ -6,15 +6,17 @@ import Category from "../pages/Category";
 import Favorites from "../pages/Favorites";
 import Cart from "../pages/Cart";
 import Contact from "../pages/Contact";
+import CakeDetails from "../pages/CakeDetails";
 
 function AppRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/contact" element={<Contact />} />
-      <Route path="/contact" element={<Contact/>}/>
+      <Route path="/contact" element={<Contact />} />
       <Route path="/cakes" element={<Cakes />} />
       <Route path="/category/:categoryPath" element={<Category />} />
+      <Route path="/cake/:id" element={<CakeDetails />} />
       <Route path="/favorites" element={<Favorites />} />
       <Route path="/cart" element={<Cart />} />
     </Routes>

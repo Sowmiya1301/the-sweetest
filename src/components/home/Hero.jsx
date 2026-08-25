@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { PiButterflyDuotone } from "react-icons/pi";
 
 function Hero() {
@@ -24,9 +25,12 @@ function Hero() {
           </p>
 
           <div className="mt-8 flex flex-col gap-4 sm:flex-row ">
-            <button className="rounded-full bg-primary hover:bg-primary-dark text-white px-6 py-3 font-medium ">
+            <Link
+              to="/cakes"
+              className="rounded-full bg-primary hover:bg-primary-dark text-white px-6 py-3 font-medium inline-block"
+            >
               Browse Our Menu
-            </button>
+            </Link>
           </div>
         </div>
 
