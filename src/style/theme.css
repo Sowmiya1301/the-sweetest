@@ -1,0 +1,28 @@
+@theme {
+  /* background */
+  --color-cream: #fff8f3;
+  --color-surface: #ffffff;
+
+  /* pink-500 — buttons, active links, prices */
+  --color-primary: #ec4899;
+  --color-primary-dark: #db2777;
+
+  /* headings, cake names */
+  --color-heading: #7a4a3a;
+  /* nav links, body  */
+  --color-body: #5b3a2e;
+  /* help text */
+  --color-muted: #9a8478;
+
+  /* Category card */
+  --color-accent-pink: #fbd9e4;
+  --color-accent-yellow: #fbebc3;
+  --color-accent-green: #dcead6;
+
+  /* Status */
+  /* "Available" */
+  --color-success: #4caf50;
+  /* "Out of stock", remove buttons */
+  --color-danger: #e5484d;
+  --color-border: #f0e2d6;
+}

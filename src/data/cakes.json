@@ -1,0 +1,116 @@
+[
+    {
+        "id": "c1",
+        "name": "Strawberry Delight",
+        "price": 3000.00,
+        "category": "special-cakes",
+        "image": "/images/strawberry-cake.jpg",
+        "bestSeller": true,
+        "available": true,
+        "description": "A soft vanilla sponge layered with fresh strawberries and light whipped cream, finished with a delicate berry glaze."
+
+    },
+    {
+        "id": "c2",
+        "name": "Truffle Delight",
+        "price": 3500.00,
+        "category": "special-cakes",
+        "image": "/images/truffle-cake.jpg",
+        "bestSeller": true,
+        "available": true,
+        "description": "Rich, moist chocolate layers filled with dark chocolate truffle cream and coated in a glossy ganache."
+
+    },
+    {
+        "id": "c3",
+        "name": "Choco Lava Slice",
+        "price": 250.00,
+        "category": "piece-of-cake",
+        "image": "/images/lava-slice.jpeg",
+        "bestSeller": true,
+        "available": true,
+        "description": "A single-serve warm chocolate cake slice with a molten centre."
+    },
+    {
+        "id": "c4",
+        "name": "Blueberry Cheesecake Slice",
+        "price": 300.00,
+        "category": "piece-of-cake",
+        "image": "/images/Blueberry-Cheesecake-Slice.jpeg",
+        "bestSeller": true,
+        "available": true,
+        "description": "A creamy baked cheesecake slice topped with a rich blueberry compote."
+    },
+    {
+        "id": "c5",
+        "name": "Red Velvet Cupcake",
+        "price": 200.00,
+        "category": "cupcakes",
+        "image": "/images/redvelvet-cupcake.jpeg",
+        "bestSeller": true,
+        "available": true,
+        "description": "A soft red velvet cupcake topped with a swirl of tangy cream cheese frosting."
+    },
+    {
+        "id": "c6",
+        "name": "Vanilla Bean Cupcake",
+        "price": 360.00,
+        "category": "cupcakes",
+        "image": "/images/vanila-bean-cupcake.jpeg",
+        "bestSeller": false,
+        "available": true,
+        "description": "Light vanilla bean sponge topped with buttercream and rainbow sprinkles."
+    },
+    {
+        "id": "c7",
+        "name": "Salted Caramel macaron",
+        "price": 80.00,
+        "category": "macarons",
+        "image": "/images/Caramel- Macaron.jpeg",
+        "bestSeller": true,
+        "available": true,
+        "description": "Delicate almond shells filled with a smooth salted caramel ganache."
+    },
+    {
+        "id": "c8",
+        "name": "Raspberry Rose Macaron",
+        "price": 85.00,
+        "category": "macarons",
+        "image": "/images/Raspberry-Rose-Macaron.jpeg",
+        "bestSeller": false,
+        "available": true,
+        "description": "A floral, fruity macaron filled with raspberry jam and rose-infused buttercream."
+    },
+    {
+        "id": "c9",
+        "name": "Custom Birthday Cake",
+        "price": 5000.00,
+        "category": "custom-cakes",
+        "image": "/images/Custom-Birthday-Cake.jpeg",
+        "bestSeller": false,
+        "available": true,
+        "description": "Design your own cake — choose the flavour, size, colours, and decorations for any occasion."
+    },
+    {
+        "id": "c10",
+        "name": "Custom Wedding Cake",
+        "price": 15000.00,
+        "category": "custom-cakes",
+        "image": "/images/Custom-Wedding-Cake.jpg",
+        "bestSeller": false,
+        "available": false,
+        "description": "An elegant multi-tier custom wedding cake, tailored to your colour scheme and flavour preferences."
+    },
+    {
+        "id": "c11",
+        "name": "Pistachio Macaron",
+        "price": 100.00,
+        "category": "macarons",
+        "image": "/images/Pistachio-Macaron.jpg",
+        "bestSeller": false,
+        "available": true,
+        "description": "Nutty pistachio-flavoured macaron shells filled with a smooth pistachio buttercream."
+    }
+
+    
+]
