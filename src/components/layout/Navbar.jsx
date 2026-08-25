@@ -30,7 +30,7 @@ function Navbar() {
           to="/"
           className="flex items-center justify-between gap-1 text-primary font-bold text-lg"
         >
-          <span className="logo-font">Sugar Crush</span>
+          <span className="logo-font ">Sugar Crush </span>
         </Link>
 
         {/* Desktop navigation */}

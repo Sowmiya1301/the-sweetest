@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { PiButterflyDuotone } from "react-icons/pi";
+import { FaCakeCandles } from "react-icons/fa6";
 
 function Hero() {
   return (
@@ -34,7 +35,7 @@ function Hero() {
           </div>
         </div>
 
-        {/* hero center img */}
+        {/* hero section img */}
         <div className="flex justify-center -translate-y-6 md:translate-x-8 lg:translate-x-16">
           <img
             src={`${import.meta.env.BASE_URL}cake_hero.png`}

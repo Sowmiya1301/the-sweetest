@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { CartContext } from "../context/CartContext";
 import cakes from "../data/cakes.json";
+import { FaTrash } from "react-icons/fa";
 
 function Cart() {
   const { cartItems, removeFromCart } = useContext(CartContext);
@@ -43,9 +44,10 @@ function Cart() {
 
               <button
                 onClick={() => removeFromCart(item.id)}
-                className="text-danger hover:opacity-80"
+                className="text-primary hover:opacity-80 transition-colors"
+                aria-label={`Remove ${item.name} from cart`}
               >
-                Remove
+                <FaTrash size={16} />
               </button>
             </div>
           ))}
