@@ -7,7 +7,7 @@ function Hero() {
       <div className="mx-auto grid grid-cols-1 -translate-y-6 max-w-5xl items-center md:grid-cols-2">
         {/* Left Content */}
         <div className="text-center items-center md:text-left">
-          <h1 className="text-heading text-5xl font-bold leading-[1.05] md:text-6xl lg:text-7xl">
+          <h1 className="text-heading text-2xl font-bold leading-[1.05] md:text-3xl lg:text-5xl">
             Your Favorite
             <span
               className="block text-primary  text-8xl"
@@ -18,7 +18,7 @@ function Hero() {
             <span className="block text-heading">Freshly Baked</span>
           </h1>
 
-          <p className="mt-6 text-muted text-xl">
+          <p className="mt-6 text-muted text-lg">
             Freshly baked with the finest ingredients and crafted with love to
             make every moment sweeter.
           </p>
