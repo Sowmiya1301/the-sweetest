@@ -33,7 +33,7 @@ function Hero() {
         {/* hero center img */}
         <div className="flex justify-center -translate-y-6 md:translate-x-8 lg:translate-x-16">
           <img
-            src="/cake_hero.png"
+            src={`${import.meta.env.BASE_URL}cake_hero.png`}
             className="w-full max-w-sm object-contain scale-105 drop-shadow-2xl transition-all duration-500 -rotate-5"
           />
 

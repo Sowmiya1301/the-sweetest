@@ -11,7 +11,7 @@ function About() {
           {/* Image */}
           <div className="order-1">
             <img
-              src="/images/about.jpg"
+              src={`${import.meta.env.BASE_URL}images/about.jpg`}
               alt="Delicious strawberry cake"
               className="w-full h-64 sm:h-80 md:h-[380px] object-cover rounded-xl sm:rounded-2xl"
             />

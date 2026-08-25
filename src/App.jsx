@@ -10,7 +10,7 @@ import Footer from "./components/layout/Footer";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/the-sweetest">
       <FavoritesProvider>
         <div className="flex flex-col min-h-screen">
           <Navbar />

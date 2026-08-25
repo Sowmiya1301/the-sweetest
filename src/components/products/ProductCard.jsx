@@ -27,7 +27,7 @@ function ProductCard({ product }) {
 
       {/* image */}
       <img
-        src={image}
+        src={`${import.meta.env.BASE_URL}${image}`}
         alt={name}
         className="w-full h-48 object-cover rounded-md"
       />

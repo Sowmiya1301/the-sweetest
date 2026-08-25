@@ -62,7 +62,7 @@ function CategoryShowcase() {
               className="flex-shrink-0 w-64 bg-surface rounded-xl shadow-md overflow-hidden"
             >
               <img
-                src={cat.image}
+                src={`${import.meta.env.BASE_URL}${cat.image}`}
                 alt={cat.label}
                 className="w-full h-40 object-cover"
               />
